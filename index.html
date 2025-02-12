@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A modern portfolio of Bikku Kumar, a Software Developer showcasing projects and skills." />
+  <title>Modern Portfolio - Bikku Kumar</title>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Responsive CSS (if any) -->
+  <link rel="stylesheet" href="media-queries.css">
+  <!-- Font Awesome for Social and Skill Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="logo">Bikku Kumar</div>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="dark-mode-toggle">Dark Mode</button></li>
+        </ul>
+      </nav>
+      <!-- Hamburger for Mobile -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav-links">
+      <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      <li>
+        <button id="dark-mode-toggle-mobile" onclick="toggleMenu(); toggleDarkMode();">
+          Dark Mode
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-inner fade-in">
+      <div class="hero-image">
+        <img src="bikku.jpg" alt="Bikku Kumar">
+        <!-- Social Icons below the photo -->
+        <div class="social-icons">
+          <a href="https://github.com/bikku4542" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/bikku-kumar-25643b271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/bikku4542" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-text">
+        <h1>I am Bikku Kumar</h1>
+        <h2>Software Developer</h2>
+        <p>I am a creative software and web developer passionate about crafting innovative digital solutions. Skilled in HTML, CSS, JavaScript, DSA, DBMS, and emerging technologies.</p>
+        <a href="#about" class="btn">Discover More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section fade-in">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I'm <strong>Bikku Kumar</strong>, a creative developer passionate about blending technology with art. I design and build innovative web solutions that captivate and engage. Fueled by unyielding curiosity and passion, I integrate cutting-edge technologies to deliver visually stunning, user-centric solutions that exceed client expectations.</p>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section fade-in">
+    <div class="container">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5 skill-icon html-icon"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt skill-icon css-icon"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js-square skill-icon js-icon"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-node skill-icon node-icon"></i>
+          <span>Node.js</span>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-paint-brush skill-icon uiux-icon"></i>
+          <span>UI/UX Design</span>
+        </div>
+        <!-- Add additional skills as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section fade-in">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <a href="https://github.com/bikku4542/Netflix_CLONE.git" target="_blank" rel="noopener noreferrer">
+            <img src="netflixcloneee.png" alt="Netflix Clone" class="project-pic" loading="lazy">
+          </a>
+          <div class="project-info">
+            <h3>
+              <a href="https://github.com/bikku4542/Netflix_CLONE.git" target="_blank" rel="noopener noreferrer">
+                Netflix Clone
+              </a>
+            </h3>
+            <p>Netflix clone using HTML, CSS, and JS.</p>
+          </div>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <a href="https://github.com/bikku4542/College_ERP.git" target="_blank" rel="noopener noreferrer">
+            <img src="th (1).jpg" alt="College ERP System" class="project-pic" loading="lazy">
+          </a>
+          <div class="project-info">
+            <h3>
+              <a href="https://github.com/bikku4542/College_ERP.git" target="_blank" rel="noopener noreferrer">
+                College ERP System
+              </a>
+            </h3>
+            <p>College ERP System to manage student and faculty data.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- RESUME SECTION -->
+  <section id="resume" class="section fade-in">
+    <div class="container">
+      <h2>Resume</h2>
+      <p>View my resume below or download it for a detailed overview of my experience and skills.</p>
+      <!-- Embedded PDF for viewing the resume -->
+      <iframe src="Bikku_Resume.pdf" width="0%" 0height="0px" style="border: none;"></iframe>
+      <br>
+      <a href="Bikku_Resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section fade-in">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
